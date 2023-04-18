@@ -1,0 +1,563 @@
+/*Barra de Navegación*/
+.navbar {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.navbar:hover {
+    background-color: #0a0a0a;
+    border-bottom: 1px solid #eee;
+    box-shadow: none;
+}
+
+/*elementos de Navegación*/
+.navbar-nav .nav-link {
+    color: #050505;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    transition: all 0.4s ease;
+    padding: 25px 25px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000;
+    background-color: transparent;
+}
+.navbar .container-fluid {padding-left: 1%;
+padding-right: 5%;}
+
+/*botón de busqueda*/
+
+.form-control {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 15px 15px;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #222;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-outline-success {
+    color: #fff;
+    border-color: #fff;
+    background-color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #555;
+    border-color: #555;
+}
+
+/*logo*/
+
+.navbar-brand img {
+    max-height: 250px;
+}
+
+/*contenido de la pagina*/
+
+/*Seccion Ultimas Noticias*/
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #e8ba0e;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: all 0.2s ease-in-out;
+}
+
+h2:hover::after {
+    width: 100%;
+}
+
+h2:hover {
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+.noticias-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+@media (min-width: 768px) {
+    .noticias-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.noticias-container article {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.noticias-container article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.noticias-container article h3 {
+    color: var(--primary-color);
+    margin: 10px;
+}
+
+.noticias-container article p {
+    color: #333333;
+    margin: 10px;
+}
+
+.noticias-container article a {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.noticias-container article a:hover {
+    background-color: #fcfcfc;
+}
+
+.noticias-container article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.noticias-container article img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.noticias-container article h3,
+.noticias-container article p {
+    margin: 10px;
+}
+
+.noticias-container article a {
+    margin-top: auto;
+    margin-bottom: 10px;
+    padding: 7px 5px;
+
+}
+
+/*Seccion About*/
+.titulo-sobre-nosotros {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sobre-nosotros-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sobre-nosotros-container p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.boton-contacto-about {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #e8ba0e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/*Seccion carrousel de imagenes*/
+
+#carouselExample {
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    font-size: 2rem;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    outline: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none;
+}
+
+/*footer*/
+
+footer {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscribe-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.subscribe-section h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.subscribe-section p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subscribe-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subscribe-section form label {
+    margin-bottom: 10px;
+}
+
+.subscribe-section form input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.subscribe-section form button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: #e8ba0e;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.contacto-descargas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.contacto-descargas nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.contacto-descargas nav ul li {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.contacto-descargas nav ul li a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacto-descargas nav ul li a:hover {
+    color: #e8ba0e;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*Seccion Tech*/
+
+/* Estilo general */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+  /* Sección de bienvenida */
+
+.tech-welcome h2 {
+    background-color: #f2f2f2;
+    padding: 50px;
+    text-align: center;
+}
+
+.tech-welcome h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.tech-welcome p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+  /* Sección de noticias */
+.tech-news {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-container {
+    margin: 20px;
+    width: 300px;
+    max-width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.news-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.news-preview img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-info {
+    padding: 20px;
+}
+
+.news-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-info p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .news-container {
+    width: 100%;
+    }
+}
+
+/*Seccion Reviews*/
+
+.reviews-welcome p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.reviews-welcome h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.reviews-welcome {
+    text-align: center;
+    margin: 10px;
+}
+
+.reviews-news-container {
+    display: inline-block;
+    width: 30%;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 10px;
+}
+
+.reviews-news-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.reviews-news-preview:hover {
+    transform: scale(1.05);
+}
+
+.reviews-news-preview img {
+    width: 100%;
+}
+
+.reviews-news-info {
+    padding: 10px;
+}
+
+.reviews-news a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 768px) {
+    .reviews-news-container {
+        flex-wrap: wrap;
+    }
+    
+    .reviews-news-preview {
+        width: calc(100% - 20px);
+        margin: 10px;
+    }
+}
+/* Estilos para Seccion de contacto */
+
+#contacto {
+    background-color: #f8f9fa;
+}
+
+#contacto form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 8px 0 rgba(235, 199, 0, 0.801);
+    transition: all 0.3s ease-in-out;
+}
+
+#contacto form:hover {
+    box-shadow: 0 8px 16px 0 rgba(214, 200, 8, 0.336);
+}
+
+#contacto .form-group label {
+    color: #0c0c0cde;
+}
+
+#contacto .form-control {
+    border: 2px solid #f0e009de;
+}
+
+#contacto .btn-primary {
+    background-color: #f0ba09de;
+    border: none;
+    box-shadow: 0 2px 4px 0 rgba(219, 205, 4, 0.2);
+}
+
+#contacto .btn-primary:hover {
+    background-color: #f0e009de;
+    padding: auto;;
+}
+
+#contacto .btn-primary:focus {
+    box-shadow: 0 2px 4px 0 #f0e009de,
+                0 0 0 3px #f0e009de;
+}
+
+
+
+@media (min-width: 768px) {
+    #contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    }
+}
+
+/*Seccion de Descargas*/
+
+.downloads-gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+grid-gap: 10px;
+}
+
+.gallery-item {
+text-align: center;
+}
+
+.gallery-item img {
+max-width: 100%;
+}
+
+.download-button {
+display: block;
+margin: 10px auto;
+}
