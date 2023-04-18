@@ -2,7 +2,6 @@
 
 Sitio web de noticias sobre tecnologia.
 
-Sitio de Noticias sobre tecnologia.
 
 #🚀 Deploy
 
